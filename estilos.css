@@ -1,0 +1,108 @@
+#menu {
+  font-family: Arial;
+  margin:5px;
+  
+}
+
+#menu p {
+width: 25%;
+  margin:0px;
+  padding:0px;
+}
+
+.img-album {
+  max-width: 200px;
+  max-height: 200px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 10px;
+  transition: transform 1s;
+}
+
+.img-album:hover{
+  
+}
+
+.girar{
+  animation-name: spin;
+  animation-direction: alternate;
+  animation-duration: 1800ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to{
+    transform: rotate3d(0.3, 1, 0, 360deg);
+  }
+}
+
+.lista-canciones {
+  float: left;
+  width: 300px;
+}
+
+.lista-canciones li{
+  list-style: none;
+  padding: 2px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid grey;
+  transition: padding 350ms;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.lista-canciones li:hover{
+  border-bottom: 1px solid #000000;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+#menu a {
+  display: block;
+  padding: 3px;
+  width: 160px;
+  background-color: #eee;
+  border-bottom: 1px solid #000000;
+  border-radius: 5px;
+  text-align:center;
+  margin-bottom: 18px;
+  transition: width 2s;
+}
+
+#menu a:link, #menu a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  font-weight: bold;
+  background-color: #000000;
+  border-bottom: 1px solid red;
+  color: #fff;
+}
+
+#detalles {
+    display: inline-block;
+    width: 700px;
+  background-color:#eb9999;
+  text-align:left;
+  font-family:verdana;
+  border-width:0;
+  padding:5px;
+  padding-top: 0px;
+  border: 1px dotted #eb9999;
+  margin:20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #aaa;  
+}
+
+div {
+    float: left;
+}
